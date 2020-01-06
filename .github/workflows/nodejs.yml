@@ -29,7 +29,6 @@ jobs:
       - name: SAST scanning
         uses: appthreat/sast-scan-action@master
         with:
-          src: ${{ env.GITHUB_WORKSPACE }}
           type: "nodejs"
           output: "reports"
       - name: Generate BOM using cdxgen
