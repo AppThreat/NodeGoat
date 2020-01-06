@@ -30,7 +30,6 @@ jobs:
         uses: appthreat/sast-scan-action@master
         with:
           type: "nodejs"
-          output: "reports"
       - name: Generate BOM using cdxgen
         uses: appthreat/cdxgen-action@v1
         with:
